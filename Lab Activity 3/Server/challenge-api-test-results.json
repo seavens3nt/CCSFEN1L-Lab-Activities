@@ -1,0 +1,98 @@
+{
+    "Articles":  {
+                     "create":  {
+                                    "body":  "{\"message\":\"Article created successfully\",\"success\":true,\"article\":{\"title\":\"Student API Guide\",\"content\":\"Challenge article content\",\"author\":\"Ranee Mikaella\",\"_id\":\"6a7b60411d3ef5046bf4920a\",\"createdAt\":\"2026-08-11T17:47:45.543Z\",\"updatedAt\":\"2026-08-11T17:47:45.543Z\",\"__v\":0}}",
+                                    "status":  201
+                                },
+                     "getAll":  {
+                                    "body":  "[{\"_id\":\"6a7b60411d3ef5046bf4920a\",\"title\":\"Student API Guide\",\"content\":\"Challenge article content\",\"author\":\"Ranee Mikaella\",\"createdAt\":\"2026-08-11T17:47:45.543Z\",\"updatedAt\":\"2026-08-11T17:47:45.543Z\",\"__v\":0}]",
+                                    "status":  200
+                                },
+                     "getSingle":  {
+                                       "body":  "{\"message\":\"Article found\",\"success\":true,\"article\":{\"_id\":\"6a7b60411d3ef5046bf4920a\",\"title\":\"Student API Guide\",\"content\":\"Challenge article content\",\"author\":\"Ranee Mikaella\",\"createdAt\":\"2026-08-11T17:47:45.543Z\",\"updatedAt\":\"2026-08-11T17:47:45.543Z\",\"__v\":0}}",
+                                       "status":  200
+                                   },
+                     "patch":  {
+                                   "body":  "{\"message\":\"Article updated successfully\",\"success\":true,\"article\":{\"_id\":\"6a7b60411d3ef5046bf4920a\",\"title\":\"Student API Guide\",\"content\":\"Updated article content\",\"author\":\"Ranee Mikaella\",\"createdAt\":\"2026-08-11T17:47:45.543Z\",\"updatedAt\":\"2026-08-11T17:47:45.717Z\",\"__v\":0}}",
+                                   "status":  200
+                               },
+                     "delete":  {
+                                    "body":  "{\"message\":\"Article deleted successfully\",\"success\":true}",
+                                    "status":  200
+                                }
+                 },
+    "Comments":  {
+                     "create":  {
+                                    "body":  "{\"message\":\"Comment created successfully\",\"success\":true,\"comment\":{\"commenter\":\"Ranee\",\"message\":\"This is a comment\",\"articleTitle\":\"Student API Guide\",\"_id\":\"6a7b60411d3ef5046bf49211\",\"createdAt\":\"2026-08-11T17:47:45.809Z\",\"updatedAt\":\"2026-08-11T17:47:45.809Z\",\"__v\":0}}",
+                                    "status":  201
+                                },
+                     "getAll":  {
+                                    "body":  "[{\"_id\":\"6a7b60411d3ef5046bf49211\",\"commenter\":\"Ranee\",\"message\":\"This is a comment\",\"articleTitle\":\"Student API Guide\",\"createdAt\":\"2026-08-11T17:47:45.809Z\",\"updatedAt\":\"2026-08-11T17:47:45.809Z\",\"__v\":0}]",
+                                    "status":  200
+                                },
+                     "getSingle":  {
+                                       "body":  "{\"message\":\"Comment found\",\"success\":true,\"comment\":{\"_id\":\"6a7b60411d3ef5046bf49211\",\"commenter\":\"Ranee\",\"message\":\"This is a comment\",\"articleTitle\":\"Student API Guide\",\"createdAt\":\"2026-08-11T17:47:45.809Z\",\"updatedAt\":\"2026-08-11T17:47:45.809Z\",\"__v\":0}}",
+                                       "status":  200
+                                   },
+                     "patch":  {
+                                   "body":  "{\"message\":\"Comment updated successfully\",\"success\":true,\"comment\":{\"_id\":\"6a7b60411d3ef5046bf49211\",\"commenter\":\"Ranee\",\"message\":\"Updated comment message\",\"articleTitle\":\"Student API Guide\",\"createdAt\":\"2026-08-11T17:47:45.809Z\",\"updatedAt\":\"2026-08-11T17:47:45.915Z\",\"__v\":0}}",
+                                   "status":  200
+                               },
+                     "delete":  {
+                                    "body":  "{\"message\":\"Comment deleted successfully\",\"success\":true}",
+                                    "status":  200
+                                }
+                 },
+    "Categories":  {
+                       "create":  {
+                                      "body":  "{\"message\":\"Category created successfully\",\"success\":true,\"category\":{\"name\":\"Technology\",\"description\":\"Articles about technology\",\"_id\":\"6a7b60411d3ef5046bf49218\",\"createdAt\":\"2026-08-11T17:47:45.982Z\",\"updatedAt\":\"2026-08-11T17:47:45.982Z\",\"__v\":0}}",
+                                      "status":  201
+                                  },
+                       "getAll":  {
+                                      "body":  "[{\"_id\":\"6a7b60411d3ef5046bf49218\",\"name\":\"Technology\",\"description\":\"Articles about technology\",\"createdAt\":\"2026-08-11T17:47:45.982Z\",\"updatedAt\":\"2026-08-11T17:47:45.982Z\",\"__v\":0}]",
+                                      "status":  200
+                                  },
+                       "getSingle":  {
+                                         "body":  "{\"message\":\"Category found\",\"success\":true,\"category\":{\"_id\":\"6a7b60411d3ef5046bf49218\",\"name\":\"Technology\",\"description\":\"Articles about technology\",\"createdAt\":\"2026-08-11T17:47:45.982Z\",\"updatedAt\":\"2026-08-11T17:47:45.982Z\",\"__v\":0}}",
+                                         "status":  200
+                                     },
+                       "patch":  {
+                                     "body":  "{\"message\":\"Category updated successfully\",\"success\":true,\"category\":{\"_id\":\"6a7b60411d3ef5046bf49218\",\"name\":\"Technology\",\"description\":\"Updated technology category\",\"createdAt\":\"2026-08-11T17:47:45.982Z\",\"updatedAt\":\"2026-08-11T17:47:46.081Z\",\"__v\":0}}",
+                                     "status":  200
+                                 },
+                       "delete":  {
+                                      "body":  "{\"message\":\"Category deleted successfully\",\"success\":true}",
+                                      "status":  200
+                                  }
+                   },
+    "UpdatedUser":  {
+                        "create":  {
+                                       "body":  "{\"message\":\"User created successfully\",\"success\":true,\"user\":{\"name\":\"Updated User Test\",\"studentNumber\":\"555\",\"course\":\"BSCS-ML\",\"yearLevel\":\"3rd Year\",\"email\":\"updated.user.test@example.com\",\"_id\":\"6a7b60421d3ef5046bf4921f\",\"createdAt\":\"2026-08-11T17:47:46.143Z\",\"updatedAt\":\"2026-08-11T17:47:46.143Z\",\"__v\":0}}",
+                                       "status":  201
+                                   },
+                        "getAll":  {
+                                       "body":  "[{\"_id\":\"6a7b576f05d0702df99c2619\",\"name\":\"Mikaella Gutierrez\",\"studentNumber\":\"20260001\",\"course\":\"BSIT\",\"yearLevel\":\"1st Year\",\"email\":\"mikaella.gutierrez@example.com\",\"createdAt\":\"2026-08-11T17:10:07.096Z\",\"updatedAt\":\"2026-08-11T17:10:07.096Z\",\"__v\":0},{\"_id\":\"6a7b5849e0205da1d716d969\",\"createdAt\":\"2026-08-11T17:13:45.585Z\",\"updatedAt\":\"2026-08-11T17:13:45.585Z\",\"__v\":0},{\"_id\":\"6a7b58b5caafba61b48b70e3\",\"name\":\"Ranee Mikaella Gutierrez\",\"studentNumber\":\"1\",\"course\":\"BSCS-ML\",\"yearLevel\":\"3rd Year\",\"email\":\"raneemikaellavgutierrez@gmail.com\",\"createdAt\":\"2026-08-11T17:15:33.666Z\",\"updatedAt\":\"2026-08-11T17:23:05.204Z\",\"__v\":0},{\"_id\":\"6a7b60421d3ef5046bf4921f\",\"name\":\"Updated User Test\",\"studentNumber\":\"555\",\"course\":\"BSCS-ML\",\"yearLevel\":\"3rd Year\",\"email\":\"updated.user.test@example.com\",\"createdAt\":\"2026-08-11T17:47:46.143Z\",\"updatedAt\":\"2026-08-11T17:47:46.143Z\",\"__v\":0}]",
+                                       "status":  200
+                                   },
+                        "getSingle":  {
+                                          "body":  "{\"message\":\"User found\",\"success\":true,\"user\":{\"_id\":\"6a7b60421d3ef5046bf4921f\",\"name\":\"Updated User Test\",\"studentNumber\":\"555\",\"course\":\"BSCS-ML\",\"yearLevel\":\"3rd Year\",\"email\":\"updated.user.test@example.com\",\"createdAt\":\"2026-08-11T17:47:46.143Z\",\"updatedAt\":\"2026-08-11T17:47:46.143Z\",\"__v\":0}}",
+                                          "status":  200
+                                      },
+                        "patch":  {
+                                      "body":  "{\"message\":\"User updated successfully\",\"success\":true,\"user\":{\"_id\":\"6a7b60421d3ef5046bf4921f\",\"name\":\"Updated User Test\",\"studentNumber\":\"555\",\"course\":\"BSCS-ML\",\"yearLevel\":\"4th Year\",\"email\":\"updated.user.test@example.com\",\"createdAt\":\"2026-08-11T17:47:46.143Z\",\"updatedAt\":\"2026-08-11T17:47:46.242Z\",\"__v\":0}}",
+                                      "status":  200
+                                  },
+                        "delete":  {
+                                       "body":  "{\"message\":\"User deleted successfully\",\"success\":true}",
+                                       "status":  200
+                                   }
+                    },
+    "Register":  {
+                     "status":  201,
+                     "body":  "{\"message\":\"User registered successfully\",\"success\":true,\"user\":{\"_id\":\"6a7b60421d3ef5046bf49227\",\"name\":\"Register User\",\"studentNumber\":\"777\",\"course\":\"BSCS-ML\",\"yearLevel\":\"3rd Year\",\"email\":\"challenge.20260812014746@example.com\"}}"
+                 },
+    "Login":  {
+                  "status":  200,
+                  "body":  "{\"message\":\"Login successful\",\"success\":true,\"user\":{\"_id\":\"6a7b60421d3ef5046bf49227\",\"name\":\"Register User\",\"studentNumber\":\"777\",\"course\":\"BSCS-ML\",\"yearLevel\":\"3rd Year\",\"email\":\"challenge.20260812014746@example.com\"}}"
+              }
+}
