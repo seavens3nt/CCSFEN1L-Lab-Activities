@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: 'Pixelify Sans', ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #f3f3f3;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.page {
+  padding: 2rem;
+}
